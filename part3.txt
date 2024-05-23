@@ -1,7 +1,0 @@
-Now, we will be creating Dynamic Routes
-Like, whenever we tap on any restaurant card, then it should navigate to that restaurant page dynamically. For that, we will create another component named 'RestaurantMenu', so our url should look like, "localhost:1234/restaurantmenu/resID", where this 'resID' is actual dynamic and it should change for each different restaurant. 'resID' can be anything like, '123', '122112', '1a2a', anything.
-So for that, we will create one more object in our routing configuration, which is like -
-    {
-        path: "/restaurantmenu/:resID",
-        element: <RestaurantMenu />,
-    }
