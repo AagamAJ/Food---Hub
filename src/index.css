@@ -1,0 +1,261 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    margin: auto;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    z-index: 10;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    background: url("./utils/images/header-bg.png");
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.logo-container {
+    line-height: 0; /* this is done to remove the extra space used by the outer container */
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 16%;
+}
+
+.logo {
+    width: 80px;
+    filter: invert(100);
+    cursor: pointer;
+}
+
+.logo-container .comp-name {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.nav-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    font-size: 21px;
+}
+
+.nav-items ul li {
+    cursor: pointer;
+    margin-right: 10px;
+    padding-inline: 10px;
+    padding-block: 1px;
+    opacity: 0.8;
+    transition: all 0s;
+}
+
+.nav-items ul li .link {
+    text-decoration: none;
+    color: black;
+}
+
+.hover-items:hover {
+    background-color: #0b9cfe;
+    color: white;
+    border-radius: 8px;
+    transform: scale(0.97);
+}
+
+.login-btn {
+    border-radius: 7px;
+    cursor: pointer;
+    padding-inline: 7px;
+    padding-block: 1px;
+    margin-right: 15px;
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+    margin: auto;
+}
+
+.search .search-input {
+    width: 83%;
+    padding-left: 25px;
+    border-radius: 7px;
+    outline: none;
+    font-size: 19px;
+}
+
+.search .searchImg {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s, ease-in;
+}
+
+.searchImg:hover {
+    transform: scale(0.96);
+}
+
+.filter-btn {
+    padding: 9px;
+    border-radius: 7px;
+    background-color: #0b9cfe66;
+    opacity: 0.7;
+    border: 2px solid #96acb65e;
+    font-size: 18px;
+    transition: all 0s;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #0b9cfe;
+    color: white;
+    transform: scale(0.96);
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    max-width: 96%;
+    margin: auto;
+    margin-top: 38px;
+}
+
+.res-container .card-link {
+    text-decoration: none;
+    color: black;
+}
+
+.res-card {
+    width: 233px;
+    /* height: max-content; */
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-inline: 11px;
+    transition: all 0.1s ease-in-out;
+}
+
+.res-card:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+    box-shadow: 2px 0px 21px #8080804f;
+    background-color: white;
+}
+
+.res-card .res-img {
+    width: 100%;
+    height: 150px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+}
+
+.res-card .res-img img {
+    width: 94%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.res-card .name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 3px;
+}
+
+.res-card .name {
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 10px;
+    text-align: start;
+}
+
+.res-card .rating {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b9cfe;
+    color: aliceblue;
+    border-radius: 4px;
+    padding: 2px;
+    padding-right: 4px;
+    margin-right: 8px;
+    margin-left: 2px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.res-card .icon {
+    color: aliceblue;
+    font-size: 10px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+
+.res-card .cuisines-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.res-card .cuisines {
+    font-size: small;
+    opacity: 0.65;
+    margin-left: 10px;
+    text-align: start;
+    width: 70%;
+}
+
+.res-card .time {
+    margin-right: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0.65;
+}
+
+.login-btn:hover {
+    background-color: red;
+}
+
+.login-btn:active {
+    background-color: #0b9cfe;
+}

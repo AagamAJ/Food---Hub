@@ -1,0 +1,7 @@
+There are two typs of Routing -
+    - Server Side Routing
+    - Client Side Routing
+
+Server Side Routing - Suppose we have, 'index.html', 'about.html', 'contact.html', and we click upon 'about.html'("/about") anchor tag, then it reloads the whole page, makes a network call to the server, fetches the 'about.html' and then renders it on our UI. This is how Server side routing works. When you make a network call, and the page is coming from the server, that is server side routing.
+
+Client Side Routing - When we start our application for the first time, it loads all the component about the 'about.js', 'contact.js', etc. and then whenever we click on the link of the 'about.js'("/about"), then it just loads that component and renders it on the UI. This is the application of "Single Page Application", because the whole application is not loading again and again, it just loads the component and renders it on the UI.

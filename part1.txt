@@ -1,0 +1,69 @@
+In this episode of Namaste React, we will learn, how can we create routing paths in our application.
+Routes means, when we write "localhost:1234/" in link address, then our 'home' page should load, when we write "localhost:1234/about" in link address, then our 'about' page should load.
+To achieve this, we will install another React dependency named as "react-router-dom".
+Now we will import this package inside our 'app.js' file.
+It is imported as - "import { createBrowserRouter } from 'react-router-dom';". This "createBrowserRouter" will create a Routing Configuration for our App.
+
+const appRouter = createBrowserRouter([
+    // this configuration takes some information about routing. This takes a list of objects
+    {
+        path: "/",
+        element: <AppLayout />,
+        errorElement: <Error />, // this component will be rendered when we provide a wrong path which is not made
+    },
+    {
+        path: "/about",
+        element: <About />,
+    },
+    {
+        path: "/contact",
+        element: <Contact />,
+    },
+]);
+This is Routing Configuration.
+
+After creating routing configurations, we now have to render them, so where will we render them, we will render them by using one more component provided by the 'react-router-dom', named as 'routerProvider'.
+So, instead of rendering our <App.js /> component directly, we will now use <RouterProvider /> component to render our routes.
+
+After doing all these routings, there is still a problem, the problem is that, we lost our Header component, whenever our path changes, so we want our Header to be intact, and according to our path, the corresponding component should be loaded. This is known as Children Routes.
+So to develop children routes, first we will make some changes in our routing configurations.
+
+const appRouter = createBrowserRouter([
+    // this configuration takes some information about routing. This takes a list of objects
+    {
+        path: "/",
+        element: <AppLayout />,
+        children: [
+            {
+                path: "/",
+                element: <Body />,
+            },
+            {
+                path: "/about",
+                element: <About />,
+            },
+            {
+                path: "/contact",
+                element: <Contact />,
+            },
+        ],
+        errorElement: <Error />, // this component will be rendered when we provide a wrong path which is not made
+    },
+]);
+
+So after adding children routes, this is how our routing configuration looks.
+
+And to use this children routes, we will be using another Component provided by "react-router-dom", named as "Outlet".
+And we will use this <Outlet /> component inside our AppLayout component's return function.
+
+Now, we want to link our Header elements(Home, About Us, Contact Us, etc.) which we made earlier, with our path, so that whenever we click on them, it navigates us to a new page corresponding to the link.
+To do this, we have two ways -
+    - using an anchor <a> tag.
+    <a href="/about"> About </a>
+    Never use an Anchor<a> tag inside any React Application, because it reloads the whole page, which is not convinient.
+
+    - using "link" component provided by "react-router-dom".
+    <Link to="/about"> About </Link>
+    Using Link component is faster, as it does not reloads the whole page and navigates to the other page. In backend, <Link> tag uses <a> anchor tag, which you can see in browser's developer console, after navigating to that Linked element.
+
+So, this is known as "Single Page Application", where our application is not getting re-loaded while navigating to other pages, where previously, our application used to get loaded, and we used to have multiple files, named 'index.html', 'about.html', 'contact.html', etc. So this is the concept of Single Page Application, which is possible using React.

@@ -1,0 +1,60 @@
+.about {
+    width: 92%;
+    margin: auto;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact .contact-head {
+    text-align: center;
+    margin: 15px 10px;
+    font-size: xx-large;
+    font-family: "Bruno Ace SC", cursive;
+}
+
+.myInput {
+    width: 450px;
+    height: 30px;
+    text-align: center;
+    margin: 7px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 11px;
+    font-weight: bold;
+    outline: none;
+}
+
+.myInput::placeholder {
+    /* font-weight: lighter; */
+    font-size: larger;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.my-btn {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 8px;
+    border-radius: 7px;
+    border: 2px solid #96acb65e;
+    background-color: #0b9cfe66;
+    font-size: 18px;
+    transition: all 0s;
+    cursor: pointer;
+}
+
+.my-btn:hover {
+    background-color: #0b9cfe;
+    color: white;
+    transform: scale(0.96);
+}

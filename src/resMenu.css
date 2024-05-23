@@ -1,0 +1,92 @@
+.menu {
+    max-width: 92%;
+    margin: auto;
+}
+
+.res-name-line {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.res-name-line .res-name {
+    display: inline;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.res-cuisines {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.res-cuisines .cuisines-price {
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.res-menu {
+    margin-top: 30px;
+}
+
+.menu-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 45px;
+    max-width: 96%;
+    margin-left: -40px;
+}
+
+.menu-small-cont {
+    position: relative;
+    height: max-content;
+    background-color: #f0f8ff;
+    padding-inline: 20px;
+    border-radius: 7px;
+    width: 320px;
+}
+
+.title-head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.icon.active {
+    transform: rotate(180deg);
+}
+
+.title-content {
+    width: 320px;
+    max-height: 0;
+    margin-left: -20px;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    border-radius: 0 0 7px 7px;
+    transition: max-height 0.2s;
+}
+
+.title-content.open {
+    margin-left: -20px;
+}
+
+.title-content .menu-item {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: -20px;
+    margin-right: 30px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.menu-item .menu-item-name {
+    width: 70%;
+}
