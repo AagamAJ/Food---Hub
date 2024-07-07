@@ -24,31 +24,6 @@ The Dynamic Food Application is a responsive web application built using ReactJS
 - **HTML:** For structuring web pages.
 - **Zomato API:** Integrated for fetching restaurant and menu data dynamically.
 
-## Installation
-
-To run this project locally, follow these steps:
-
-1. **Clone the repository:**
-
-   ```bash
-   https://github.com/AagamAJ/Food-Hub.git
-   cd Food-Hub
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-
-   ```bash
-   npm start
-   ```
-
-   The application should now be running on `http://localhost:1234`.
-
 ## Usage
 
 1. **Home Page:** Displays a list of curated restaurants.
@@ -58,24 +33,6 @@ To run this project locally, follow these steps:
 5. **Filter Button:** Click to filter restaurants by ratings greater than 4.0 stars.
 6. **Responsive Design:** The application adjusts its layout based on the screen size for optimal viewing.
 7. **Shimmer UI:** Observe shimmered cards indicating loading content while the data is being fetched from the API.
-
-## Project Structure
-
-```plaintext
-Food-Hub/
-├── src/
-│   ├── components/
-│   │   ├── RestaurantList.js
-│   │   ├── RestaurantDetail.js
-│   │   ├── SearchBar.js
-│   │   ├── FilterButton.js
-│   │   └── MenuDropdown.js
-│   ├── App.js
-│   ├── index.css
-│   └── index.html
-├── package.json
-└── README.md
-```
 
 ## Contributing
 
