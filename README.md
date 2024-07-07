@@ -1,5 +1,7 @@
 # Dynamic Food Application
 
+#### Note: I am excited to submit my assignment, where I took the initiative to create a unique project to stand out among other candidates. I developed an Online Food Ordering Website using React.js and its JSX syntax. This project not only aligns with concepts similar to the provided tasks but also demonstrates my ability to innovate and adapt to different scenarios.
+
 # Overview
 
 The Dynamic Food Application is a responsive web application built using ReactJS, designed to provide users with a curated restaurant listing and interactive menus. It includes features such as multi-page navigation, real-time data integration from the Zomato API, and responsive design principles for optimal user experience across various devices.
